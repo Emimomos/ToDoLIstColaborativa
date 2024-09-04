@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Collaborative To-Do List</h1>
+
+        <!-- Crear un nuevo grupo -->
+        <div>
+            <input type="text" id="group-name" placeholder="Enter group name">
+            <button id="create-group">Create Group</button>
+        </div>
+
+        <!-- Invitar usuarios al grupo -->
+        <div id="invite-section" style="display: none;">
+            <input type="text" id="invite-username" placeholder="Invite a user">
+            <button id="invite-user">Invite User</button>
+        </div>
+
+        <!-- Seleccionar grupo -->
+        <div>
+            <label for="groups">Select Group:</label>
+            <select id="groups">
+                <option value="" disabled selected>Select a group</option>
+            </select>
+        </div>
+
+        <!-- Añadir tareas -->
+        <div id="task-section" style="display: none;">
+            <input type="text" id="new-task" placeholder="Add a new task">
+            <button id="add-task">Add Task</button>
+            <ul id="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
